@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-sqlalchemy = "*"
+flask_marshmallow = "*"
+flask-migrate = "*"
+flask-script = "*"
+marshmallow = "*"
+flask-bcrypt = "*"
+pyjwt = "*"
+pytest = "*"
+coverage = "*"
+pytest-cov = "*"
+python-coveralls = "*"
+gunicorn = "*"
+python-dotenv = "*"
+pymysql = "*"
+
+[dev-packages]
+pylint = "*"
+
+[requires]
