@@ -23,6 +23,10 @@ def create_app(env_name):
   bcrypt.init_app(app) # For authorization/encryption
   db.init_app(app)
 
+  # This creates the inital tables from models
+  # Does not create if already created
+  db.create_all(app=app)
+
   # setting up url groups endpoint for the controllers
   app.register_blueprint(fake_api, url_prefix='/api/v1/fake')
 
