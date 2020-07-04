@@ -19,10 +19,8 @@ REST API written in Python Flask using SQLAlchemy as the ORM with auto migration
 ## Installation
 
   ```bash
-  # Clone the repository 
-  git clone https://github.com/dipayan/python-flask-rest-microservice.git
   # Change into the directory
-  cd python-flask-rest-microservice
+  cd fake-microservice
   # Install all required dependencies with
   pipenv install pylint --dev
   # Activate the project virtual environment
@@ -48,44 +46,7 @@ REST API written in Python Flask using SQLAlchemy as the ORM with auto migration
   ```bash
   nodemon run.py
   ```
-## Usage
-
-<!-- **API Specifications**
-  - GET: /api/v1/todos/
-  - GET: /api/v1/todos/?title= 
-  - GET: /api/v1/todos/{todo_id}
-  - POST: /api/v1/todos/
-  - PUT: /api/v1/todos/{todo_id}
-  - DELETE: /api/v1/todos/{todo_id} -->
-
-<!-- **Example**
-Get all todos
-curl http://localhost:{PORT}/api/v1/todos/ -->
-
-<!-- ## Running the application as a Docker container
-
- ```bash
- cd python-flask-rest-microservice
- # Build the docker image 
- docker build -t python-flask-app .
- # Run the docker container and put the port as specified in the .env file
- docker run -d -p 9000:9000 --name python-flask-app -e PORT=9000 -e BUILD_ENV='development' -e DATABASE_URL='mysql+pymysql://user:pass@host:port/dbname' python-flask-app
- # Check the logs
- docker logs -f python-flask-app
- # Cleaup the container
- docker stop python-flask-app && docker rm python-flask-app
- ``` -->
-
-## Database Auto migration & creation
-
-You can create the tables using the following set of commands
-
-```bash
-python manage.py db init
-python manage.py db migrate
-python manage.py db upgrade
-```
 
 ## Author
 
-Dipayan Biswas
+Bug Function

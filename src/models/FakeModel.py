@@ -86,7 +86,7 @@ class FakeModel(db.Model):
         db.session.commit()
 
     @staticmethod
-    def get_all_cards(all_args):
+    def get_all_fakes(all_args):
         # =====================================================================
         # ================= IN CASE OF A LIMIT USE: ===========================
         # =====================================================================
